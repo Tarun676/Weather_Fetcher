@@ -1,14 +1,14 @@
-body.Clear { background-image: url('clear_weather.jpg'); }
-body.Rain { background-image: url('rain_weather.jpg'); }
-body.Clouds { background-image: url('cloud_weather.jpg'); }
-body.Snow { background-image: url('snowy_weather.jpg'); }
+/* Consolidated CSS (duplicates removed, unused selectors cleaned) */
+
+/* Base page */
 body {
-    background-size: cover;
+    background-color: #0c111d; /* fallback */
     color: white;
     text-align: center;
     font-family: 'Montserrat', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     padding-top: 50px;
 }
+
 #weather-effects {
     position: fixed;
     inset: 0;
@@ -17,10 +17,7 @@ body {
     overflow: hidden;
 }
 
-/* New: Fully live, animated gradient backgrounds per condition (no static images) */
-body {
-    background-color: #0c111d; /* fallback */
-}
+/* Live, animated gradient backgrounds per condition */
 body::before {
     content: "";
     position: fixed;
@@ -30,7 +27,6 @@ body::before {
     animation: bg-pan 28s linear infinite;
     opacity: 0.92;
 }
-/* Gentle vignette for depth */
 body::after {
     content: "";
     position: fixed;
@@ -48,45 +44,12 @@ body::after {
 
 /* Condition-specific palettes */
 body.Clear::before {
-    /* bright, warm, clear day */
-    background-image: linear-gradient(135deg,
-        #56CCF2 0%,
-        #2F80ED 35%,
-        #FFD166 100%
-    );
+    background-image: linear-gradient(135deg,#56CCF2 0%,#2F80ED 35%,#FFD166 100%);
 }
-body.Clouds::before {
-    /* soft, desaturated blues/greys */
-    background-image: linear-gradient(135deg,
-        #5f6b73 0%,
-        #7f8c96 40%,
-        #a7b3bb 100%
-    );
-}
-body.Rain::before {
-    /* deep moody blues/teals */
-    background-image: linear-gradient(135deg,
-        #0f2027 0%,
-        #203a43 50%,
-        #2c5364 100%
-    );
-}
-body.Snow::before {
-    /* crisp icy whites/blues */
-    background-image: linear-gradient(135deg,
-        #e6f0fb 0%,
-        #d9ecff 40%,
-        #cfe9ff 100%
-    );
-}
-body.Thunder::before {
-    /* dramatic dark violet/blue */
-    background-image: linear-gradient(135deg,
-        #0b0f17 0%,
-        #151a2f 50%,
-        #2a124c 100%
-    );
-}
+body.Clouds::before { background-image: linear-gradient(135deg,#5f6b73 0%,#7f8c96 40%,#a7b3bb 100%); }
+body.Rain::before   { background-image: linear-gradient(135deg,#0f2027 0%,#203a43 50%,#2c5364 100%); }
+body.Snow::before   { background-image: linear-gradient(135deg,#e6f0fb 0%,#d9ecff 40%,#cfe9ff 100%); }
+body.Thunder::before{ background-image: linear-gradient(135deg,#0b0f17 0%,#151a2f 50%,#2a124c 100%); }
 
 /* Accessibility: respect reduced motion */
 @media (prefers-reduced-motion: reduce) {
@@ -178,35 +141,9 @@ body.Thunder::before {
     filter: blur(6px);
     opacity: 0.96;
 }
-.Clouds #weather-effects .cloud.cloud--far {
-    width: 170px;
-    height: 58px;
-    filter: blur(9px);
-    opacity: 0.88;
-}
-.Clouds #weather-effects .cloud-inner {
-    position: absolute;
-    inset: 0;
-    border-radius: 60px;
-    background: radial-gradient(120px 80px at 30% 50%, rgba(120,126,138,0.95) 0%, rgba(88,94,105,0.95) 50%, rgba(52,56,66,0.95) 100%);
-    filter: blur(7px);
-    box-shadow: 0 12px 36px rgba(0,0,0,0.3);
-    will-change: transform;
-    /* Gentle sway to add life; separate from drift so they don't conflict */
-    animation: cloud-sway var(--sway, 9s) ease-in-out infinite;
-}
-.Clouds #weather-effects .cloud.cloud--near .cloud-inner {
-    filter: blur(6px);
-    opacity: 0.96;
-}
-.Clouds #weather-effects .cloud.cloud--far {
-    width: 180px;
-    height: 68px;
-}
-.Clouds #weather-effects .cloud.cloud--far .cloud-inner {
-    filter: blur(9px);
-    opacity: 0.84;
-}
+.Clouds #weather-effects .cloud.cloud--far { width: 170px; height: 58px; filter: blur(9px); opacity: 0.88; }
+
+/* Note: `.cloud-inner` removed — JS uses `.cloud-shape` (keeps visual consistent) */
 
 /* Drift: move from current X to far right; start near their initial left position */
 @keyframes cloud-drift {
@@ -1478,8 +1415,6 @@ body.Thunder::before {
     font-weight: 700;
     margin-top: 2px;
 }
-
-/* responsive: reduce size on small screens */
 @media (max-width: 600px) {
     .metrics-panel {
         right: 10px;
