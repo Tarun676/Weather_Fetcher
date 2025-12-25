@@ -1,5 +1,6 @@
 com\weather\WeatherForecast.class
 com\weather\WeatherWebApplication.class
+com\weather\config\WeatherAppConfig.class
 com\weather\WeatherService.class
 com\weather\WeatherData.class
 com\weather\WeatherController.class
