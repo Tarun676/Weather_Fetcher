@@ -31,3 +31,8 @@
 
     ### VS Code ###
     .vscode/
+
+### Logs ###
+*.log
+test_output_*.txt
+build_log*.txt

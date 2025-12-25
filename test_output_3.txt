@@ -1,331 +1,0 @@
-WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
-WARNING: sun.misc.Unsafe::staticFieldBase has been called by com.google.inject.internal.aop.HiddenClassDefiner (file:/C:/Users/penum/.m2/wrapper/dists/apache-maven-3.9.11/03d7e36a140982eea48e22c1dcac01d8862b2550b2939e09a0809bbc5182a5bc/lib/guice-5.1.0-classes.jar)
-WARNING: Please consider reporting this to the maintainers of class com.google.inject.internal.aop.HiddenClassDefiner
-WARNING: sun.misc.Unsafe::staticFieldBase will be removed in a future release
-[INFO] Scanning for projects...
-[INFO] 
-[INFO] ----------------------< com.weather:weather-web >-----------------------
-[INFO] Building Weather Web 0.0.1-SNAPSHOT
-[INFO]   from pom.xml
-[INFO] --------------------------------[ jar ]---------------------------------
-[INFO] 
-[INFO] --- clean:3.4.0:clean (default-clean) @ weather-web ---
-[INFO] Deleting D:\5THSEMISTER\INT331\weather-web\target
-[INFO] 
-[INFO] --- resources:3.3.1:resources (default-resources) @ weather-web ---
-[INFO] Copying 1 resource from src\main\resources to target\classes
-[INFO] Copying 8 resources from src\main\resources to target\classes
-[INFO] 
-[INFO] --- compiler:3.13.0:compile (default-compile) @ weather-web ---
-[INFO] Recompiling the module because of changed source code.
-[INFO] Compiling 6 source files with javac [debug parameters release 21] to target\classes
-[INFO] 
-[INFO] --- resources:3.3.1:testResources (default-testResources) @ weather-web ---
-[INFO] skip non existing resourceDirectory D:\5THSEMISTER\INT331\weather-web\src\test\resources
-[INFO] 
-[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ weather-web ---
-[INFO] Recompiling the module because of changed dependency.
-[INFO] Compiling 2 source files with javac [debug parameters release 21] to target\test-classes
-[INFO] 
-[INFO] --- surefire:3.5.2:test (default-test) @ weather-web ---
-Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-api/3.5.2/surefire-api-3.5.2.pom
-Progress (1): 846 BProgress (1): 2.2 kBProgress (1): 3.5 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-api/3.5.2/surefire-api-3.5.2.pom (3.5 kB at 1.9 kB/s)
-Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-logger-api/3.5.2/surefire-logger-api-3.5.2.pom
-Progress (1): 844 BProgress (1): 1.8 kBProgress (1): 3.3 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-logger-api/3.5.2/surefire-logger-api-3.5.2.pom (3.3 kB at 54 kB/s)
-Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-shared-utils/3.5.2/surefire-shared-utils-3.5.2.pom
-Progress (1): 1.1 kBProgress (1): 3.7 kBProgress (1): 4.7 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-shared-utils/3.5.2/surefire-shared-utils-3.5.2.pom (4.7 kB at 94 kB/s)
-Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-extensions-api/3.5.2/surefire-extensions-api-3.5.2.pom
-Progress (1): 844 BProgress (1): 2.5 kBProgress (1): 3.5 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-extensions-api/3.5.2/surefire-extensions-api-3.5.2.pom (3.5 kB at 17 kB/s)
-Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/maven-surefire-common/3.5.2/maven-surefire-common-3.5.2.pom
-Progress (1): 823 BProgress (1): 2.9 kBProgress (1): 6.8 kBProgress (1): 7.8 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/maven-surefire-common/3.5.2/maven-surefire-common-3.5.2.pom (7.8 kB at 70 kB/s)
-Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-booter/3.5.2/surefire-booter-3.5.2.pom
-Progress (1): 839 BProgress (1): 2.5 kBProgress (1): 4.8 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-booter/3.5.2/surefire-booter-3.5.2.pom (4.8 kB at 41 kB/s)
-Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-extensions-spi/3.5.2/surefire-extensions-spi-3.5.2.pom
-Progress (1): 879 BProgress (1): 1.8 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-extensions-spi/3.5.2/surefire-extensions-spi-3.5.2.pom (1.8 kB at 28 kB/s)
-Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-java/1.3.0/plexus-java-1.3.0.pom
-Progress (1): 1.1 kBProgress (1): 3.2 kBProgress (1): 6.8 kBProgress (1): 9.7 kBProgress (1): 14 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-java/1.3.0/plexus-java-1.3.0.pom (14 kB at 117 kB/s)
-Downloading from central: https://repo.maven.apache.org/maven2/com/thoughtworks/qdox/qdox/2.1.0/qdox-2.1.0.pom
-Progress (1): 887 BProgress (1): 2.6 kBProgress (1): 5.9 kBProgress (1): 9.2 kBProgress (1): 12 kB Progress (1): 16 kBProgress (1): 18 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/com/thoughtworks/qdox/qdox/2.1.0/qdox-2.1.0.pom (18 kB at 288 kB/s)
-Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-api/3.5.2/surefire-api-3.5.2.jar
-Progress (1): 0.9/171 kBProgress (1): 2.3/171 kBProgress (1): 3.6/171 kBProgress (1): 5.0/171 kBProgress (1): 6.4/171 kBProgress (1): 7.7/171 kBProgress (1): 9.1/171 kBProgress (1): 10/171 kB Progress (1): 12/171 kBProgress (1): 13/171 kBProgress (1): 15/171 kBProgress (1): 16/171 kBProgress (1): 20/171 kBProgress (1): 20/171 kBProgress (1): 25/171 kBProgress (1): 29/171 kBProgress (1): 33/171 kBProgress (1): 37/171 kBProgress (1): 42/171 kBProgress (1): 46/171 kBProgress (1): 50/171 kBProgress (1): 54/171 kBProgress (1): 58/171 kBProgress (1): 63/171 kBProgress (1): 67/171 kBProgress (1): 71/171 kBProgress (1): 75/171 kBProgress (1): 80/171 kBProgress (1): 84/171 kBProgress (1): 88/171 kBProgress (1): 92/171 kBProgress (1): 97/171 kBProgress (1): 101/171 kBProgress (1): 105/171 kBProgress (1): 109/171 kBProgress (1): 113/171 kBProgress (1): 118/171 kBProgress (1): 122/171 kBProgress (1): 126/171 kBProgress (1): 130/171 kBProgress (1): 135/171 kBProgress (1): 139/171 kBProgress (1): 143/171 kBProgress (1): 147/171 kBProgress (1): 151/171 kBProgress (1): 156/171 kBProgress (1): 160/171 kBProgress (1): 164/171 kBProgress (1): 168/171 kBProgress (1): 171 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-api/3.5.2/surefire-api-3.5.2.jar (171 kB at 2.0 MB/s)
-Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-logger-api/3.5.2/surefire-logger-api-3.5.2.jar
-Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-shared-utils/3.5.2/surefire-shared-utils-3.5.2.jar
-Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-extensions-api/3.5.2/surefire-extensions-api-3.5.2.jar
-Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/maven-surefire-common/3.5.2/maven-surefire-common-3.5.2.jar
-Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-booter/3.5.2/surefire-booter-3.5.2.jar
-Progress (1): 3.8/311 kBProgress (1): 8.0/311 kBProgress (1): 11/311 kB Progress (1): 28/311 kBProgress (1): 44/311 kBProgress (1): 61/311 kBProgress (1): 77/311 kBProgress (1): 93/311 kBProgress (1): 110/311 kBProgress (1): 126/311 kBProgress (1): 142/311 kBProgress (1): 159/311 kBProgress (1): 175/311 kBProgress (1): 192/311 kBProgress (1): 208/311 kBProgress (1): 218/311 kBProgress (1): 235/311 kBProgress (1): 251/311 kBProgress (1): 267/311 kBProgress (1): 284/311 kBProgress (1): 300/311 kBProgress (1): 311 kB    Progress (2): 311 kB | 0.9/118 kBProgress (2): 311 kB | 2.3/118 kBProgress (2): 311 kB | 3.6/118 kBProgress (2): 311 kB | 5.0/118 kBProgress (2): 311 kB | 6.4/118 kBProgress (2): 311 kB | 7.7/118 kBProgress (2): 311 kB | 9.1/118 kBProgress (2): 311 kB | 10/118 kB Progress (2): 311 kB | 11/118 kBProgress (2): 311 kB | 13/118 kBProgress (2): 311 kB | 14/118 kBProgress (2): 311 kB | 16/118 kBProgress (2): 311 kB | 17/118 kBProgress (2): 311 kB | 18/118 kBProgress (2): 311 kB | 20/118 kB                                Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/maven-surefire-common/3.5.2/maven-surefire-common-3.5.2.jar (311 kB at 2.2 MB/s)
-Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-extensions-spi/3.5.2/surefire-extensions-spi-3.5.2.jar
-Progress (1): 21/118 kBProgress (1): 22/118 kBProgress (1): 24/118 kBProgress (1): 25/118 kBProgress (1): 26/118 kBProgress (1): 28/118 kBProgress (1): 29/118 kBProgress (1): 31/118 kBProgress (1): 32/118 kBProgress (1): 33/118 kBProgress (1): 35/118 kBProgress (1): 36/118 kBProgress (1): 37/118 kBProgress (1): 39/118 kBProgress (1): 40/118 kBProgress (1): 42/118 kBProgress (1): 43/118 kBProgress (1): 44/118 kBProgress (1): 46/118 kBProgress (2): 46/118 kB | 0.9/26 kBProgress (3): 46/118 kB | 0.9/26 kB | 0.9/14 kBProgress (3): 46/118 kB | 0.9/26 kB | 2.3/14 kBProgress (4): 46/118 kB | 0.9/26 kB | 2.3/14 kB | 0/2.8 MBProgress (4): 46/118 kB | 0.9/26 kB | 3.6/14 kB | 0/2.8 MBProgress (4): 46/118 kB | 2.3/26 kB | 3.6/14 kB | 0/2.8 MBProgress (4): 47/118 kB | 2.3/26 kB | 3.6/14 kB | 0/2.8 MBProgress (4): 47/118 kB | 2.3/26 kB | 4.0/14 kB | 0/2.8 MBProgress (4): 47/118 kB | 2.3/26 kB | 4.0/14 kB | 0/2.8 MBProgress (4): 47/118 kB | 3.6/26 kB | 4.0/14 kB | 0/2.8 MBProgress (4): 48/118 kB | 3.6/26 kB | 4.0/14 kB | 0/2.8 MBProgress (4): 48/118 kB | 3.6/26 kB | 4.0/14 kB | 0/2.8 MBProgress (4): 50/118 kB | 3.6/26 kB | 4.0/14 kB | 0/2.8 MBProgress (4): 50/118 kB | 4.0/26 kB | 4.0/14 kB | 0/2.8 MBProgress (4): 50/118 kB | 4.0/26 kB | 5.3/14 kB | 0/2.8 MBProgress (4): 50/118 kB | 4.0/26 kB | 5.3/14 kB | 0/2.8 MBProgress (4): 51/118 kB | 4.0/26 kB | 5.3/14 kB | 0/2.8 MBProgress (4): 51/118 kB | 4.0/26 kB | 6.7/14 kB | 0/2.8 MBProgress (4): 51/118 kB | 4.0/26 kB | 8.1/14 kB | 0/2.8 MBProgress (4): 51/118 kB | 4.0/26 kB | 8.1/14 kB | 0/2.8 MBProgress (4): 51/118 kB | 5.3/26 kB | 8.1/14 kB | 0/2.8 MBProgress (4): 51/118 kB | 5.3/26 kB | 9.5/14 kB | 0/2.8 MBProgress (4): 51/118 kB | 5.3/26 kB | 9.5/14 kB | 0/2.8 MBProgress (4): 51/118 kB | 5.3/26 kB | 9.5/14 kB | 0/2.8 MBProgress (4): 52/118 kB | 5.3/26 kB | 9.5/14 kB | 0/2.8 MBProgress (4): 52/118 kB | 6.7/26 kB | 9.5/14 kB | 0/2.8 MBProgress (4): 54/118 kB | 6.7/26 kB | 9.5/14 kB | 0/2.8 MBProgress (4): 54/118 kB | 8.1/26 kB | 9.5/14 kB | 0/2.8 MBProgress (4): 55/118 kB | 8.1/26 kB | 9.5/14 kB | 0/2.8 MBProgress (4): 55/118 kB | 8.1/26 kB | 11/14 kB | 0/2.8 MB Progress (4): 55/118 kB | 8.1/26 kB | 11/14 kB | 0/2.8 MBProgress (4): 55/118 kB | 9.5/26 kB | 11/14 kB | 0/2.8 MBProgress (4): 55/118 kB | 9.5/26 kB | 12/14 kB | 0/2.8 MBProgress (4): 55/118 kB | 9.5/26 kB | 12/14 kB | 0/2.8 MBProgress (4): 55/118 kB | 11/26 kB | 12/14 kB | 0/2.8 MB Progress (4): 59/118 kB | 11/26 kB | 12/14 kB | 0/2.8 MBProgress (4): 59/118 kB | 11/26 kB | 12/14 kB | 0/2.8 MBProgress (4): 59/118 kB | 11/26 kB | 14/14 kB | 0/2.8 MBProgress (4): 59/118 kB | 11/26 kB | 14 kB | 0/2.8 MB   Progress (4): 59/118 kB | 11/26 kB | 14 kB | 0/2.8 MBProgress (4): 59/118 kB | 12/26 kB | 14 kB | 0/2.8 MBProgress (4): 59/118 kB | 12/26 kB | 14 kB | 0/2.8 MBProgress (4): 59/118 kB | 14/26 kB | 14 kB | 0/2.8 MBProgress (4): 59/118 kB | 14/26 kB | 14 kB | 0/2.8 MBProgress (4): 59/118 kB | 14/26 kB | 14 kB | 0/2.8 MBProgress (4): 59/118 kB | 15/26 kB | 14 kB | 0/2.8 MBProgress (4): 59/118 kB | 16/26 kB | 14 kB | 0/2.8 MBProgress (4): 64/118 kB | 16/26 kB | 14 kB | 0/2.8 MBProgress (4): 64/118 kB | 18/26 kB | 14 kB | 0/2.8 MBProgress (4): 64/118 kB | 19/26 kB | 14 kB | 0/2.8 MBProgress (4): 64/118 kB | 20/26 kB | 14 kB | 0/2.8 MBProgress (4): 64/118 kB | 22/26 kB | 14 kB | 0/2.8 MBProgress (4): 64/118 kB | 22/26 kB | 14 kB | 0/2.8 MBProgress (4): 64/118 kB | 23/26 kB | 14 kB | 0/2.8 MBProgress (4): 64/118 kB | 25/26 kB | 14 kB | 0/2.8 MBProgress (4): 64/118 kB | 25/26 kB | 14 kB | 0/2.8 MBProgress (4): 64/118 kB | 25/26 kB | 14 kB | 0/2.8 MBProgress (4): 64/118 kB | 26/26 kB | 14 kB | 0/2.8 MBProgress (4): 64/118 kB | 26 kB | 14 kB | 0/2.8 MB   Progress (4): 64/118 kB | 26 kB | 14 kB | 0/2.8 MBProgress (4): 64/118 kB | 26 kB | 14 kB | 0/2.8 MBProgress (4): 64/118 kB | 26 kB | 14 kB | 0/2.8 MBProgress (4): 64/118 kB | 26 kB | 14 kB | 0/2.8 MBProgress (4): 68/118 kB | 26 kB | 14 kB | 0/2.8 MBProgress (4): 72/118 kB | 26 kB | 14 kB | 0/2.8 MBProgress (4): 72/118 kB | 26 kB | 14 kB | 0/2.8 MBProgress (4): 76/118 kB | 26 kB | 14 kB | 0/2.8 MBProgress (4): 76/118 kB | 26 kB | 14 kB | 0/2.8 MBProgress (4): 81/118 kB | 26 kB | 14 kB | 0/2.8 MBProgress (4): 81/118 kB | 26 kB | 14 kB | 0/2.8 MBProgress (4): 81/118 kB | 26 kB | 14 kB | 0/2.8 MBProgress (4): 81/118 kB | 26 kB | 14 kB | 0/2.8 MBProgress (4): 81/118 kB | 26 kB | 14 kB | 0/2.8 MBProgress (4): 81/118 kB | 26 kB | 14 kB | 0/2.8 MBProgress (4): 81/118 kB | 26 kB | 14 kB | 0/2.8 MBProgress (4): 81/118 kB | 26 kB | 14 kB | 0/2.8 MBProgress (4): 81/118 kB | 26 kB | 14 kB | 0/2.8 MBProgress (4): 85/118 kB | 26 kB | 14 kB | 0/2.8 MBProgress (4): 85/118 kB | 26 kB | 14 kB | 0/2.8 MBProgress (4): 89/118 kB | 26 kB | 14 kB | 0/2.8 MBProgress (4): 89/118 kB | 26 kB | 14 kB | 0/2.8 MBProgress (4): 89/118 kB | 26 kB | 14 kB | 0/2.8 MBProgress (4): 93/118 kB | 26 kB | 14 kB | 0/2.8 MBProgress (4): 93/118 kB | 26 kB | 14 kB | 0/2.8 MBProgress (4): 93/118 kB | 26 kB | 14 kB | 0/2.8 MBProgress (4): 97/118 kB | 26 kB | 14 kB | 0/2.8 MBProgress (4): 97/118 kB | 26 kB | 14 kB | 0.1/2.8 MBProgress (4): 102/118 kB | 26 kB | 14 kB | 0.1/2.8 MBProgress (4): 102/118 kB | 26 kB | 14 kB | 0.1/2.8 MBProgress (4): 106/118 kB | 26 kB | 14 kB | 0.1/2.8 MBProgress (4): 110/118 kB | 26 kB | 14 kB | 0.1/2.8 MBProgress (4): 110/118 kB | 26 kB | 14 kB | 0.1/2.8 MBProgress (4): 110/118 kB | 26 kB | 14 kB | 0.1/2.8 MBProgress (4): 110/118 kB | 26 kB | 14 kB | 0.1/2.8 MBProgress (4): 110/118 kB | 26 kB | 14 kB | 0.1/2.8 MBProgress (4): 110/118 kB | 26 kB | 14 kB | 0.1/2.8 MBProgress (4): 110/118 kB | 26 kB | 14 kB | 0.1/2.8 MBProgress (4): 114/118 kB | 26 kB | 14 kB | 0.1/2.8 MBProgress (4): 114/118 kB | 26 kB | 14 kB | 0.1/2.8 MBProgress (4): 118 kB | 26 kB | 14 kB | 0.1/2.8 MB    Progress (4): 118 kB | 26 kB | 14 kB | 0.1/2.8 MB                                                 Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-extensions-api/3.5.2/surefire-extensions-api-3.5.2.jar (26 kB at 135 kB/s)
-Progress (3): 118 kB | 14 kB | 0.1/2.8 MB                                         Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-java/1.3.0/plexus-java-1.3.0.jar
-Progress (3): 118 kB | 14 kB | 0.1/2.8 MB                                         Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-logger-api/3.5.2/surefire-logger-api-3.5.2.jar (14 kB at 69 kB/s)
-Downloading from central: https://repo.maven.apache.org/maven2/com/thoughtworks/qdox/qdox/2.1.0/qdox-2.1.0.jar
-Progress (2): 118 kB | 0.1/2.8 MBProgress (2): 118 kB | 0.1/2.8 MBProgress (2): 118 kB | 0.1/2.8 MBProgress (2): 118 kB | 0.1/2.8 MBProgress (2): 118 kB | 0.1/2.8 MBProgress (2): 118 kB | 0.1/2.8 MBProgress (2): 118 kB | 0.1/2.8 MBProgress (2): 118 kB | 0.1/2.8 MBProgress (2): 118 kB | 0.1/2.8 MBProgress (2): 118 kB | 0.1/2.8 MBProgress (2): 118 kB | 0.1/2.8 MBProgress (2): 118 kB | 0.1/2.8 MBProgress (2): 118 kB | 0.1/2.8 MBProgress (2): 118 kB | 0.1/2.8 MBProgress (2): 118 kB | 0.1/2.8 MBProgress (2): 118 kB | 0.2/2.8 MBProgress (2): 118 kB | 0.2/2.8 MBProgress (2): 118 kB | 0.2/2.8 MBProgress (2): 118 kB | 0.2/2.8 MBProgress (2): 118 kB | 0.2/2.8 MBProgress (2): 118 kB | 0.2/2.8 MB                                 Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-booter/3.5.2/surefire-booter-3.5.2.jar (118 kB at 597 kB/s)
-Progress (1): 0.2/2.8 MBProgress (1): 0.2/2.8 MBProgress (1): 0.2/2.8 MBProgress (1): 0.2/2.8 MBProgress (1): 0.2/2.8 MBProgress (1): 0.2/2.8 MBProgress (2): 0.2/2.8 MB | 7.7/8.2 kBProgress (2): 0.2/2.8 MB | 8.2 kB    Progress (2): 0.2/2.8 MB | 8.2 kBProgress (2): 0.2/2.8 MB | 8.2 kBProgress (2): 0.2/2.8 MB | 8.2 kBProgress (2): 0.2/2.8 MB | 8.2 kB                                 Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-extensions-spi/3.5.2/surefire-extensions-spi-3.5.2.jar (8.2 kB at 35 kB/s)
-Progress (1): 0.2/2.8 MBProgress (1): 0.2/2.8 MBProgress (2): 0.2/2.8 MB | 0.9/348 kBProgress (3): 0.2/2.8 MB | 0.9/348 kB | 3.8/57 kBProgress (3): 0.2/2.8 MB | 2.3/348 kB | 3.8/57 kBProgress (3): 0.2/2.8 MB | 3.6/348 kB | 3.8/57 kBProgress (3): 0.2/2.8 MB | 3.6/348 kB | 8.0/57 kBProgress (3): 0.2/2.8 MB | 5.0/348 kB | 8.0/57 kBProgress (3): 0.2/2.8 MB | 5.0/348 kB | 8.0/57 kBProgress (3): 0.2/2.8 MB | 5.0/348 kB | 12/57 kB Progress (3): 0.2/2.8 MB | 6.4/348 kB | 12/57 kBProgress (3): 0.2/2.8 MB | 7.7/348 kB | 12/57 kBProgress (3): 0.2/2.8 MB | 9.1/348 kB | 12/57 kBProgress (3): 0.2/2.8 MB | 9.1/348 kB | 16/57 kBProgress (3): 0.2/2.8 MB | 10/348 kB | 16/57 kB Progress (3): 0.2/2.8 MB | 10/348 kB | 21/57 kBProgress (3): 0.2/2.8 MB | 12/348 kB | 21/57 kBProgress (3): 0.2/2.8 MB | 13/348 kB | 21/57 kBProgress (3): 0.2/2.8 MB | 13/348 kB | 25/57 kBProgress (3): 0.2/2.8 MB | 15/348 kB | 25/57 kBProgress (3): 0.2/2.8 MB | 15/348 kB | 29/57 kBProgress (3): 0.2/2.8 MB | 16/348 kB | 29/57 kBProgress (3): 0.2/2.8 MB | 17/348 kB | 29/57 kBProgress (3): 0.2/2.8 MB | 17/348 kB | 33/57 kBProgress (3): 0.2/2.8 MB | 19/348 kB | 33/57 kBProgress (3): 0.2/2.8 MB | 19/348 kB | 37/57 kBProgress (3): 0.2/2.8 MB | 20/348 kB | 37/57 kBProgress (3): 0.2/2.8 MB | 21/348 kB | 37/57 kBProgress (3): 0.2/2.8 MB | 21/348 kB | 41/57 kBProgress (3): 0.2/2.8 MB | 23/348 kB | 41/57 kBProgress (3): 0.2/2.8 MB | 24/348 kB | 41/57 kBProgress (3): 0.2/2.8 MB | 24/348 kB | 46/57 kBProgress (3): 0.2/2.8 MB | 25/348 kB | 46/57 kBProgress (3): 0.2/2.8 MB | 26/348 kB | 46/57 kBProgress (3): 0.2/2.8 MB | 30/348 kB | 46/57 kBProgress (3): 0.2/2.8 MB | 30/348 kB | 50/57 kBProgress (3): 0.2/2.8 MB | 30/348 kB | 54/57 kBProgress (3): 0.2/2.8 MB | 30/348 kB | 57 kB   Progress (3): 0.2/2.8 MB | 34/348 kB | 57 kBProgress (3): 0.2/2.8 MB | 39/348 kB | 57 kBProgress (3): 0.3/2.8 MB | 39/348 kB | 57 kB                                            Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-java/1.3.0/plexus-java-1.3.0.jar (57 kB at 228 kB/s)
-Progress (2): 0.3/2.8 MB | 43/348 kBProgress (2): 0.3/2.8 MB | 43/348 kBProgress (2): 0.3/2.8 MB | 47/348 kBProgress (2): 0.3/2.8 MB | 51/348 kBProgress (2): 0.3/2.8 MB | 56/348 kBProgress (2): 0.3/2.8 MB | 56/348 kBProgress (2): 0.3/2.8 MB | 60/348 kBProgress (2): 0.3/2.8 MB | 64/348 kBProgress (2): 0.3/2.8 MB | 68/348 kBProgress (2): 0.3/2.8 MB | 68/348 kBProgress (2): 0.3/2.8 MB | 72/348 kBProgress (2): 0.3/2.8 MB | 77/348 kBProgress (2): 0.3/2.8 MB | 81/348 kBProgress (2): 0.3/2.8 MB | 85/348 kBProgress (2): 0.3/2.8 MB | 89/348 kBProgress (2): 0.3/2.8 MB | 94/348 kBProgress (2): 0.3/2.8 MB | 98/348 kBProgress (2): 0.3/2.8 MB | 102/348 kBProgress (2): 0.3/2.8 MB | 106/348 kBProgress (2): 0.3/2.8 MB | 111/348 kBProgress (2): 0.3/2.8 MB | 111/348 kBProgress (2): 0.3/2.8 MB | 115/348 kBProgress (2): 0.3/2.8 MB | 119/348 kBProgress (2): 0.3/2.8 MB | 119/348 kBProgress (2): 0.3/2.8 MB | 123/348 kBProgress (2): 0.3/2.8 MB | 127/348 kBProgress (2): 0.3/2.8 MB | 127/348 kBProgress (2): 0.3/2.8 MB | 132/348 kBProgress (2): 0.3/2.8 MB | 136/348 kBProgress (2): 0.3/2.8 MB | 140/348 kBProgress (2): 0.3/2.8 MB | 144/348 kBProgress (2): 0.3/2.8 MB | 149/348 kBProgress (2): 0.3/2.8 MB | 153/348 kBProgress (2): 0.3/2.8 MB | 156/348 kBProgress (2): 0.3/2.8 MB | 160/348 kBProgress (2): 0.3/2.8 MB | 164/348 kBProgress (2): 0.3/2.8 MB | 168/348 kBProgress (2): 0.3/2.8 MB | 173/348 kBProgress (2): 0.3/2.8 MB | 177/348 kBProgress (2): 0.3/2.8 MB | 181/348 kBProgress (2): 0.3/2.8 MB | 185/348 kBProgress (2): 0.3/2.8 MB | 189/348 kBProgress (2): 0.3/2.8 MB | 194/348 kBProgress (2): 0.3/2.8 MB | 210/348 kBProgress (2): 0.4/2.8 MB | 210/348 kBProgress (2): 0.4/2.8 MB | 226/348 kBProgress (2): 0.4/2.8 MB | 243/348 kBProgress (2): 0.4/2.8 MB | 254/348 kBProgress (2): 0.4/2.8 MB | 254/348 kBProgress (2): 0.4/2.8 MB | 259/348 kBProgress (2): 0.4/2.8 MB | 259/348 kBProgress (2): 0.4/2.8 MB | 276/348 kBProgress (2): 0.4/2.8 MB | 292/348 kBProgress (2): 0.4/2.8 MB | 292/348 kBProgress (2): 0.4/2.8 MB | 308/348 kBProgress (2): 0.4/2.8 MB | 308/348 kBProgress (2): 0.4/2.8 MB | 325/348 kBProgress (2): 0.4/2.8 MB | 325/348 kBProgress (2): 0.5/2.8 MB | 325/348 kBProgress (2): 0.5/2.8 MB | 341/348 kBProgress (2): 0.5/2.8 MB | 348 kB    Progress (2): 0.5/2.8 MB | 348 kBProgress (2): 0.5/2.8 MB | 348 kBProgress (2): 0.5/2.8 MB | 348 kBProgress (2): 0.5/2.8 MB | 348 kBProgress (2): 0.5/2.8 MB | 348 kBProgress (2): 0.6/2.8 MB | 348 kB                                 Downloaded from central: https://repo.maven.apache.org/maven2/com/thoughtworks/qdox/qdox/2.1.0/qdox-2.1.0.jar (348 kB at 1.1 MB/s)
-Progress (1): 0.6/2.8 MBProgress (1): 0.6/2.8 MBProgress (1): 0.6/2.8 MBProgress (1): 0.6/2.8 MBProgress (1): 0.6/2.8 MBProgress (1): 0.7/2.8 MBProgress (1): 0.7/2.8 MBProgress (1): 0.7/2.8 MBProgress (1): 0.7/2.8 MBProgress (1): 0.7/2.8 MBProgress (1): 0.7/2.8 MBProgress (1): 0.8/2.8 MBProgress (1): 0.8/2.8 MBProgress (1): 0.8/2.8 MBProgress (1): 0.8/2.8 MBProgress (1): 0.8/2.8 MBProgress (1): 0.8/2.8 MBProgress (1): 0.9/2.8 MBProgress (1): 0.9/2.8 MBProgress (1): 0.9/2.8 MBProgress (1): 0.9/2.8 MBProgress (1): 0.9/2.8 MBProgress (1): 0.9/2.8 MBProgress (1): 0.9/2.8 MBProgress (1): 1.0/2.8 MBProgress (1): 1.0/2.8 MBProgress (1): 1.0/2.8 MBProgress (1): 1.0/2.8 MBProgress (1): 1.0/2.8 MBProgress (1): 1.0/2.8 MBProgress (1): 1.0/2.8 MBProgress (1): 1.1/2.8 MBProgress (1): 1.1/2.8 MBProgress (1): 1.1/2.8 MBProgress (1): 1.1/2.8 MBProgress (1): 1.1/2.8 MBProgress (1): 1.1/2.8 MBProgress (1): 1.2/2.8 MBProgress (1): 1.2/2.8 MBProgress (1): 1.2/2.8 MBProgress (1): 1.2/2.8 MBProgress (1): 1.2/2.8 MBProgress (1): 1.2/2.8 MBProgress (1): 1.3/2.8 MBProgress (1): 1.3/2.8 MBProgress (1): 1.3/2.8 MBProgress (1): 1.3/2.8 MBProgress (1): 1.3/2.8 MBProgress (1): 1.3/2.8 MBProgress (1): 1.4/2.8 MBProgress (1): 1.4/2.8 MBProgress (1): 1.4/2.8 MBProgress (1): 1.4/2.8 MBProgress (1): 1.4/2.8 MBProgress (1): 1.4/2.8 MBProgress (1): 1.5/2.8 MBProgress (1): 1.5/2.8 MBProgress (1): 1.5/2.8 MBProgress (1): 1.5/2.8 MBProgress (1): 1.5/2.8 MBProgress (1): 1.5/2.8 MBProgress (1): 1.6/2.8 MBProgress (1): 1.6/2.8 MBProgress (1): 1.6/2.8 MBProgress (1): 1.6/2.8 MBProgress (1): 1.6/2.8 MBProgress (1): 1.6/2.8 MBProgress (1): 1.7/2.8 MBProgress (1): 1.7/2.8 MBProgress (1): 1.7/2.8 MBProgress (1): 1.7/2.8 MBProgress (1): 1.7/2.8 MBProgress (1): 1.7/2.8 MBProgress (1): 1.8/2.8 MBProgress (1): 1.8/2.8 MBProgress (1): 1.8/2.8 MBProgress (1): 1.8/2.8 MBProgress (1): 1.8/2.8 MBProgress (1): 1.8/2.8 MBProgress (1): 1.9/2.8 MBProgress (1): 1.9/2.8 MBProgress (1): 1.9/2.8 MBProgress (1): 1.9/2.8 MBProgress (1): 1.9/2.8 MBProgress (1): 1.9/2.8 MBProgress (1): 2.0/2.8 MBProgress (1): 2.0/2.8 MBProgress (1): 2.0/2.8 MBProgress (1): 2.0/2.8 MBProgress (1): 2.0/2.8 MBProgress (1): 2.0/2.8 MBProgress (1): 2.0/2.8 MBProgress (1): 2.1/2.8 MBProgress (1): 2.1/2.8 MBProgress (1): 2.1/2.8 MBProgress (1): 2.1/2.8 MBProgress (1): 2.1/2.8 MBProgress (1): 2.1/2.8 MBProgress (1): 2.2/2.8 MBProgress (1): 2.2/2.8 MBProgress (1): 2.2/2.8 MBProgress (1): 2.2/2.8 MBProgress (1): 2.2/2.8 MBProgress (1): 2.2/2.8 MBProgress (1): 2.3/2.8 MBProgress (1): 2.3/2.8 MBProgress (1): 2.3/2.8 MBProgress (1): 2.3/2.8 MBProgress (1): 2.3/2.8 MBProgress (1): 2.3/2.8 MBProgress (1): 2.4/2.8 MBProgress (1): 2.4/2.8 MBProgress (1): 2.4/2.8 MBProgress (1): 2.4/2.8 MBProgress (1): 2.4/2.8 MBProgress (1): 2.4/2.8 MBProgress (1): 2.5/2.8 MBProgress (1): 2.5/2.8 MBProgress (1): 2.5/2.8 MBProgress (1): 2.5/2.8 MBProgress (1): 2.5/2.8 MBProgress (1): 2.5/2.8 MBProgress (1): 2.5/2.8 MBProgress (1): 2.6/2.8 MBProgress (1): 2.6/2.8 MBProgress (1): 2.6/2.8 MBProgress (1): 2.6/2.8 MBProgress (1): 2.6/2.8 MBProgress (1): 2.6/2.8 MBProgress (1): 2.7/2.8 MBProgress (1): 2.7/2.8 MBProgress (1): 2.7/2.8 MBProgress (1): 2.7/2.8 MBProgress (1): 2.7/2.8 MBProgress (1): 2.7/2.8 MBProgress (1): 2.8/2.8 MBProgress (1): 2.8/2.8 MBProgress (1): 2.8/2.8 MBProgress (1): 2.8/2.8 MBProgress (1): 2.8/2.8 MBProgress (1): 2.8 MB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-shared-utils/3.5.2/surefire-shared-utils-3.5.2.jar (2.8 MB at 3.2 MB/s)
-[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
-Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit-platform/3.5.2/surefire-junit-platform-3.5.2.pom
-Progress (1): 849 BProgress (1): 3.2 kBProgress (1): 5.7 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit-platform/3.5.2/surefire-junit-platform-3.5.2.pom (5.7 kB at 61 kB/s)
-Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/3.5.2/surefire-providers-3.5.2.pom
-Progress (1): 855 BProgress (1): 2.6 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/3.5.2/surefire-providers-3.5.2.pom (2.6 kB at 42 kB/s)
-Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/3.5.2/common-java5-3.5.2.pom
-Progress (1): 849 BProgress (1): 2.6 kBProgress (1): 2.8 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/3.5.2/common-java5-3.5.2.pom (2.8 kB at 23 kB/s)
-Downloading from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-engine/1.9.3/junit-platform-engine-1.9.3.pom
-Progress (1): 959 BProgress (1): 3.2 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-engine/1.9.3/junit-platform-engine-1.9.3.pom (3.2 kB at 25 kB/s)
-Downloading from central: https://repo.maven.apache.org/maven2/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.pom
-Progress (1): 1.2 kBProgress (1): 1.7 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.pom (1.7 kB at 13 kB/s)
-Downloading from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-commons/1.9.3/junit-platform-commons-1.9.3.pom
-Progress (1): 972 BProgress (1): 2.8 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-commons/1.9.3/junit-platform-commons-1.9.3.pom (2.8 kB at 32 kB/s)
-Downloading from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-launcher/1.9.3/junit-platform-launcher-1.9.3.pom
-Progress (1): 975 BProgress (1): 3.0 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-launcher/1.9.3/junit-platform-launcher-1.9.3.pom (3.0 kB at 41 kB/s)
-Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit-platform/3.5.2/surefire-junit-platform-3.5.2.jar
-Progress (1): 4.0/27 kBProgress (1): 20/27 kB Progress (1): 27 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit-platform/3.5.2/surefire-junit-platform-3.5.2.jar (27 kB at 498 kB/s)
-Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/3.5.2/common-java5-3.5.2.jar
-Downloading from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-engine/1.9.3/junit-platform-engine-1.9.3.jar
-Downloading from central: https://repo.maven.apache.org/maven2/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar
-Downloading from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-commons/1.9.3/junit-platform-commons-1.9.3.jar
-Downloading from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-launcher/1.9.3/junit-platform-launcher-1.9.3.jar
-Progress (1): 0.9/169 kBProgress (1): 2.3/169 kBProgress (1): 3.6/169 kBProgress (1): 4.0/169 kBProgress (2): 4.0/169 kB | 3.8/18 kBProgress (2): 5.3/169 kB | 3.8/18 kBProgress (2): 5.3/169 kB | 4.0/18 kBProgress (2): 6.7/169 kB | 4.0/18 kBProgress (2): 6.7/169 kB | 8.2/18 kBProgress (3): 6.7/169 kB | 8.2/18 kB | 4.0/7.7 kBProgress (3): 8.1/169 kB | 8.2/18 kB | 4.0/7.7 kBProgress (3): 8.1/169 kB | 8.2/18 kB | 7.7 kB    Progress (3): 9.5/169 kB | 8.2/18 kB | 7.7 kBProgress (3): 11/169 kB | 8.2/18 kB | 7.7 kB Progress (3): 11/169 kB | 12/18 kB | 7.7 kB Progress (3): 12/169 kB | 12/18 kB | 7.7 kBProgress (3): 14/169 kB | 12/18 kB | 7.7 kBProgress (3): 14/169 kB | 17/18 kB | 7.7 kBProgress (3): 15/169 kB | 17/18 kB | 7.7 kBProgress (3): 15/169 kB | 18 kB | 7.7 kB   Progress (3): 16/169 kB | 18 kB | 7.7 kBProgress (3): 18/169 kB | 18 kB | 7.7 kBProgress (3): 19/169 kB | 18 kB | 7.7 kBProgress (3): 20/169 kB | 18 kB | 7.7 kBProgress (4): 20/169 kB | 18 kB | 7.7 kB | 7.7/103 kBProgress (4): 22/169 kB | 18 kB | 7.7 kB | 7.7/103 kBProgress (4): 22/169 kB | 18 kB | 7.7 kB | 16/103 kB Progress (4): 23/169 kB | 18 kB | 7.7 kB | 16/103 kBProgress (4): 25/169 kB | 18 kB | 7.7 kB | 16/103 kBProgress (4): 26/169 kB | 18 kB | 7.7 kB | 16/103 kBProgress (4): 26/169 kB | 18 kB | 7.7 kB | 20/103 kBProgress (4): 27/169 kB | 18 kB | 7.7 kB | 20/103 kBProgress (4): 29/169 kB | 18 kB | 7.7 kB | 20/103 kBProgress (4): 30/169 kB | 18 kB | 7.7 kB | 20/103 kBProgress (4): 31/169 kB | 18 kB | 7.7 kB | 20/103 kBProgress (4): 33/169 kB | 18 kB | 7.7 kB | 20/103 kBProgress (4): 34/169 kB | 18 kB | 7.7 kB | 20/103 kB                                                    Downloaded from central: https://repo.maven.apache.org/maven2/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar (7.7 kB at 163 kB/s)
-Progress (3): 35/169 kB | 18 kB | 20/103 kBProgress (3): 37/169 kB | 18 kB | 20/103 kBProgress (3): 38/169 kB | 18 kB | 20/103 kBProgress (3): 38/169 kB | 18 kB | 37/103 kB                                           Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/3.5.2/common-java5-3.5.2.jar (18 kB at 338 kB/s)
-Progress (3): 38/169 kB | 37/103 kB | 7.7/189 kBProgress (3): 38/169 kB | 37/103 kB | 16/189 kB Progress (3): 42/169 kB | 37/103 kB | 16/189 kBProgress (3): 42/169 kB | 37/103 kB | 25/189 kBProgress (3): 47/169 kB | 37/103 kB | 25/189 kBProgress (3): 51/169 kB | 37/103 kB | 25/189 kBProgress (3): 55/169 kB | 37/103 kB | 25/189 kBProgress (3): 59/169 kB | 37/103 kB | 25/189 kBProgress (3): 64/169 kB | 37/103 kB | 25/189 kBProgress (3): 64/169 kB | 53/103 kB | 25/189 kBProgress (3): 68/169 kB | 53/103 kB | 25/189 kBProgress (3): 72/169 kB | 53/103 kB | 25/189 kBProgress (3): 76/169 kB | 53/103 kB | 25/189 kBProgress (3): 76/169 kB | 70/103 kB | 25/189 kBProgress (3): 80/169 kB | 70/103 kB | 25/189 kBProgress (3): 80/169 kB | 70/103 kB | 41/189 kBProgress (3): 80/169 kB | 86/103 kB | 41/189 kBProgress (3): 85/169 kB | 86/103 kB | 41/189 kBProgress (3): 89/169 kB | 86/103 kB | 41/189 kBProgress (3): 93/169 kB | 86/103 kB | 41/189 kBProgress (3): 97/169 kB | 86/103 kB | 41/189 kBProgress (3): 102/169 kB | 86/103 kB | 41/189 kBProgress (3): 102/169 kB | 102/103 kB | 41/189 kBProgress (3): 102/169 kB | 102/103 kB | 57/189 kBProgress (3): 102/169 kB | 103 kB | 57/189 kB    Progress (3): 106/169 kB | 103 kB | 57/189 kBProgress (3): 110/169 kB | 103 kB | 57/189 kBProgress (3): 110/169 kB | 103 kB | 74/189 kBProgress (3): 114/169 kB | 103 kB | 74/189 kBProgress (3): 119/169 kB | 103 kB | 74/189 kBProgress (3): 123/169 kB | 103 kB | 74/189 kBProgress (3): 127/169 kB | 103 kB | 74/189 kBProgress (3): 127/169 kB | 103 kB | 90/189 kBProgress (3): 131/169 kB | 103 kB | 90/189 kBProgress (3): 135/169 kB | 103 kB | 90/189 kBProgress (3): 139/169 kB | 103 kB | 90/189 kBProgress (3): 144/169 kB | 103 kB | 90/189 kBProgress (3): 148/169 kB | 103 kB | 90/189 kBProgress (3): 152/169 kB | 103 kB | 90/189 kBProgress (3): 156/169 kB | 103 kB | 90/189 kBProgress (3): 156/169 kB | 103 kB | 106/189 kBProgress (3): 156/169 kB | 103 kB | 123/189 kB                                              Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-commons/1.9.3/junit-platform-commons-1.9.3.jar (103 kB at 1.2 MB/s)
-Progress (2): 160/169 kB | 123/189 kBProgress (2): 165/169 kB | 123/189 kBProgress (2): 169/169 kB | 123/189 kBProgress (2): 169 kB | 123/189 kB    Progress (2): 169 kB | 139/189 kBProgress (2): 169 kB | 156/189 kBProgress (2): 169 kB | 172/189 kBProgress (2): 169 kB | 188/189 kBProgress (2): 169 kB | 189 kB                                 Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-launcher/1.9.3/junit-platform-launcher-1.9.3.jar (169 kB at 1.7 MB/s)
-Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-engine/1.9.3/junit-platform-engine-1.9.3.jar (189 kB at 1.9 MB/s)
-Downloading from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-launcher/1.11.3/junit-platform-launcher-1.11.3.pom
-Progress (1): 977 BProgress (1): 3.0 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-launcher/1.11.3/junit-platform-launcher-1.11.3.pom (3.0 kB at 55 kB/s)
-Downloading from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-launcher/1.11.3/junit-platform-launcher-1.11.3.jar
-Progress (1): 4.0/189 kBProgress (1): 20/189 kB Progress (1): 37/189 kBProgress (1): 53/189 kBProgress (1): 70/189 kBProgress (1): 86/189 kBProgress (1): 102/189 kBProgress (1): 119/189 kBProgress (1): 135/189 kBProgress (1): 151/189 kBProgress (1): 168/189 kBProgress (1): 184/189 kBProgress (1): 189 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-launcher/1.11.3/junit-platform-launcher-1.11.3.jar (189 kB at 2.7 MB/s)
-[INFO] 
-[INFO] -------------------------------------------------------
-[INFO]  T E S T S
-[INFO] -------------------------------------------------------
-[INFO] Running com.weather.WeatherServiceTest
-Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build what is described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org/mockito/Mockito.html#0.3
-WARNING: A Java agent has been loaded dynamically (C:\Users\penum\.m2\repository\net\bytebuddy\byte-buddy-agent\1.15.10\byte-buddy-agent-1.15.10.jar)
-WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
-WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
-WARNING: Dynamic loading of agents will be disallowed by default in a future release
-Java HotSpot(TM) 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
-[ERROR] Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 1.841 s <<< FAILURE! -- in com.weather.WeatherServiceTest
-[ERROR] com.weather.WeatherServiceTest.fetchForecast_Success -- Time elapsed: 1.622 s <<< ERROR!
-org.mockito.exceptions.base.MockitoException: 
-
-Mockito cannot mock this class: class okhttp3.OkHttpClient.
-
-If you're not sure why you're getting this error, please open an issue on GitHub.
-
-
-Java               : 25
-JVM vendor name    : Oracle Corporation
-JVM vendor version : 25.0.1+8-LTS-27
-JVM name           : Java HotSpot(TM) 64-Bit Server VM
-JVM version        : 25.0.1+8-LTS-27
-JVM info           : mixed mode, sharing
-OS name            : Windows 11
-OS version         : 10.0
-
-
-You are seeing this disclaimer because Mockito is configured to create inlined mocks.
-You can learn about inline mocks and their limitations under item #39 of the Mockito class javadoc.
-
-Underlying exception : org.mockito.exceptions.base.MockitoException: Could not modify all classes [interface okhttp3.WebSocket$Factory, interface java.lang.Cloneable, class java.lang.Object, interface okhttp3.Call$Factory, class okhttp3.OkHttpClient]
-	at com.weather.WeatherServiceTest.setUp(WeatherServiceTest.java:30)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-Caused by: org.mockito.exceptions.base.MockitoException: Could not modify all classes [interface okhttp3.WebSocket$Factory, interface java.lang.Cloneable, class java.lang.Object, interface okhttp3.Call$Factory, class okhttp3.OkHttpClient]
-	at net.bytebuddy.TypeCache.findOrInsert(TypeCache.java:168)
-	at net.bytebuddy.TypeCache$WithInlineExpunction.findOrInsert(TypeCache.java:399)
-	at net.bytebuddy.TypeCache.findOrInsert(TypeCache.java:190)
-	at net.bytebuddy.TypeCache$WithInlineExpunction.findOrInsert(TypeCache.java:410)
-	... 4 more
-Caused by: java.lang.IllegalStateException: 
-Byte Buddy could not instrument all classes within the mock's type hierarchy
-
-This problem should never occur for javac-compiled classes. This problem has been observed for classes that are:
- - Compiled by older versions of scalac
- - Classes that are part of the Android distribution
-	at org.mockito.internal.creation.bytebuddy.InlineBytecodeGenerator.triggerRetransformation(InlineBytecodeGenerator.java:285)
-	at org.mockito.internal.creation.bytebuddy.InlineBytecodeGenerator.mockClass(InlineBytecodeGenerator.java:218)
-	at org.mockito.internal.creation.bytebuddy.TypeCachingBytecodeGenerator.lambda$mockClass$0(TypeCachingBytecodeGenerator.java:78)
-	at net.bytebuddy.TypeCache.findOrInsert(TypeCache.java:168)
-	at net.bytebuddy.TypeCache$WithInlineExpunction.findOrInsert(TypeCache.java:399)
-	at net.bytebuddy.TypeCache.findOrInsert(TypeCache.java:190)
-	at net.bytebuddy.TypeCache$WithInlineExpunction.findOrInsert(TypeCache.java:410)
-	at org.mockito.internal.creation.bytebuddy.TypeCachingBytecodeGenerator.mockClass(TypeCachingBytecodeGenerator.java:75)
-	at org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.createMockType(InlineDelegateByteBuddyMockMaker.java:408)
-	at org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.doCreateMock(InlineDelegateByteBuddyMockMaker.java:367)
-	at org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.createMock(InlineDelegateByteBuddyMockMaker.java:346)
-	at org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker.createMock(InlineByteBuddyMockMaker.java:56)
-	at org.mockito.internal.util.MockUtil.createMock(MockUtil.java:99)
-	at org.mockito.internal.MockitoCore.mock(MockitoCore.java:84)
-	at org.mockito.Mockito.mock(Mockito.java:2162)
-	at org.mockito.internal.configuration.MockAnnotationProcessor.processAnnotationForMock(MockAnnotationProcessor.java:79)
-	at org.mockito.internal.configuration.MockAnnotationProcessor.process(MockAnnotationProcessor.java:28)
-	at org.mockito.internal.configuration.MockAnnotationProcessor.process(MockAnnotationProcessor.java:25)
-	at org.mockito.internal.configuration.IndependentAnnotationEngine.createMockFor(IndependentAnnotationEngine.java:44)
-	at org.mockito.internal.configuration.IndependentAnnotationEngine.process(IndependentAnnotationEngine.java:72)
-	at org.mockito.internal.configuration.InjectingAnnotationEngine.processIndependentAnnotations(InjectingAnnotationEngine.java:62)
-	at org.mockito.internal.configuration.InjectingAnnotationEngine.process(InjectingAnnotationEngine.java:47)
-	at org.mockito.MockitoAnnotations.openMocks(MockitoAnnotations.java:81)
-	... 4 more
-Caused by: java.lang.IllegalArgumentException: Java 25 (69) is not supported by the current version of Byte Buddy which officially supports Java 24 (68) - update Byte Buddy or set net.bytebuddy.experimental as a VM property
-	at net.bytebuddy.utility.OpenedClassReader.of(OpenedClassReader.java:120)
-	at net.bytebuddy.utility.OpenedClassReader.of(OpenedClassReader.java:95)
-	at net.bytebuddy.utility.AsmClassReader$Factory$Default.make(AsmClassReader.java:82)
-	at net.bytebuddy.dynamic.scaffold.TypeWriter$Default$ForInlining.create(TypeWriter.java:4036)
-	at net.bytebuddy.dynamic.scaffold.TypeWriter$Default.make(TypeWriter.java:2246)
-	at net.bytebuddy.dynamic.DynamicType$Builder$AbstractBase$UsingTypeWriter.make(DynamicType.java:4085)
-	at net.bytebuddy.dynamic.DynamicType$Builder$AbstractBase.make(DynamicType.java:3769)
-	at org.mockito.internal.creation.bytebuddy.InlineBytecodeGenerator.transform(InlineBytecodeGenerator.java:402)
-	at java.instrument/java.lang.instrument.ClassFileTransformer.transform(ClassFileTransformer.java:257)
-	at java.instrument/sun.instrument.TransformerManager.transform(TransformerManager.java:188)
-	at java.instrument/sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java:594)
-	at java.instrument/sun.instrument.InstrumentationImpl.retransformClasses0(Native Method)
-	at java.instrument/sun.instrument.InstrumentationImpl.retransformClasses(InstrumentationImpl.java:221)
-	at org.mockito.internal.creation.bytebuddy.InlineBytecodeGenerator.triggerRetransformation(InlineBytecodeGenerator.java:281)
-	... 26 more
-
-[ERROR] com.weather.WeatherServiceTest.fetchWeather_Success -- Time elapsed: 0.171 s <<< ERROR!
-org.mockito.exceptions.base.MockitoException: 
-
-Mockito cannot mock this class: class okhttp3.OkHttpClient.
-
-If you're not sure why you're getting this error, please open an issue on GitHub.
-
-
-Java               : 25
-JVM vendor name    : Oracle Corporation
-JVM vendor version : 25.0.1+8-LTS-27
-JVM name           : Java HotSpot(TM) 64-Bit Server VM
-JVM version        : 25.0.1+8-LTS-27
-JVM info           : mixed mode, sharing
-OS name            : Windows 11
-OS version         : 10.0
-
-
-You are seeing this disclaimer because Mockito is configured to create inlined mocks.
-You can learn about inline mocks and their limitations under item #39 of the Mockito class javadoc.
-
-Underlying exception : org.mockito.exceptions.base.MockitoException: Could not modify all classes [interface okhttp3.WebSocket$Factory, interface java.lang.Cloneable, class java.lang.Object, interface okhttp3.Call$Factory, class okhttp3.OkHttpClient]
-	at com.weather.WeatherServiceTest.setUp(WeatherServiceTest.java:30)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-Caused by: org.mockito.exceptions.base.MockitoException: Could not modify all classes [interface okhttp3.WebSocket$Factory, interface java.lang.Cloneable, class java.lang.Object, interface okhttp3.Call$Factory, class okhttp3.OkHttpClient]
-	at net.bytebuddy.TypeCache.findOrInsert(TypeCache.java:168)
-	at net.bytebuddy.TypeCache$WithInlineExpunction.findOrInsert(TypeCache.java:399)
-	at net.bytebuddy.TypeCache.findOrInsert(TypeCache.java:190)
-	at net.bytebuddy.TypeCache$WithInlineExpunction.findOrInsert(TypeCache.java:410)
-	... 4 more
-Caused by: java.lang.IllegalStateException: 
-Byte Buddy could not instrument all classes within the mock's type hierarchy
-
-This problem should never occur for javac-compiled classes. This problem has been observed for classes that are:
- - Compiled by older versions of scalac
- - Classes that are part of the Android distribution
-	at org.mockito.internal.creation.bytebuddy.InlineBytecodeGenerator.triggerRetransformation(InlineBytecodeGenerator.java:285)
-	at org.mockito.internal.creation.bytebuddy.InlineBytecodeGenerator.mockClass(InlineBytecodeGenerator.java:218)
-	at org.mockito.internal.creation.bytebuddy.TypeCachingBytecodeGenerator.lambda$mockClass$0(TypeCachingBytecodeGenerator.java:78)
-	at net.bytebuddy.TypeCache.findOrInsert(TypeCache.java:168)
-	at net.bytebuddy.TypeCache$WithInlineExpunction.findOrInsert(TypeCache.java:399)
-	at net.bytebuddy.TypeCache.findOrInsert(TypeCache.java:190)
-	at net.bytebuddy.TypeCache$WithInlineExpunction.findOrInsert(TypeCache.java:410)
-	at org.mockito.internal.creation.bytebuddy.TypeCachingBytecodeGenerator.mockClass(TypeCachingBytecodeGenerator.java:75)
-	at org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.createMockType(InlineDelegateByteBuddyMockMaker.java:408)
-	at org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.doCreateMock(InlineDelegateByteBuddyMockMaker.java:367)
-	at org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.createMock(InlineDelegateByteBuddyMockMaker.java:346)
-	at org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker.createMock(InlineByteBuddyMockMaker.java:56)
-	at org.mockito.internal.util.MockUtil.createMock(MockUtil.java:99)
-	at org.mockito.internal.MockitoCore.mock(MockitoCore.java:84)
-	at org.mockito.Mockito.mock(Mockito.java:2162)
-	at org.mockito.internal.configuration.MockAnnotationProcessor.processAnnotationForMock(MockAnnotationProcessor.java:79)
-	at org.mockito.internal.configuration.MockAnnotationProcessor.process(MockAnnotationProcessor.java:28)
-	at org.mockito.internal.configuration.MockAnnotationProcessor.process(MockAnnotationProcessor.java:25)
-	at org.mockito.internal.configuration.IndependentAnnotationEngine.createMockFor(IndependentAnnotationEngine.java:44)
-	at org.mockito.internal.configuration.IndependentAnnotationEngine.process(IndependentAnnotationEngine.java:72)
-	at org.mockito.internal.configuration.InjectingAnnotationEngine.processIndependentAnnotations(InjectingAnnotationEngine.java:62)
-	at org.mockito.internal.configuration.InjectingAnnotationEngine.process(InjectingAnnotationEngine.java:47)
-	at org.mockito.MockitoAnnotations.openMocks(MockitoAnnotations.java:81)
-	... 4 more
-Caused by: java.lang.IllegalArgumentException: Java 25 (69) is not supported by the current version of Byte Buddy which officially supports Java 24 (68) - update Byte Buddy or set net.bytebuddy.experimental as a VM property
-	at net.bytebuddy.utility.OpenedClassReader.of(OpenedClassReader.java:120)
-	at net.bytebuddy.utility.OpenedClassReader.of(OpenedClassReader.java:95)
-	at net.bytebuddy.utility.AsmClassReader$Factory$Default.make(AsmClassReader.java:82)
-	at net.bytebuddy.dynamic.scaffold.TypeWriter$Default$ForInlining.create(TypeWriter.java:4036)
-	at net.bytebuddy.dynamic.scaffold.TypeWriter$Default.make(TypeWriter.java:2246)
-	at net.bytebuddy.dynamic.DynamicType$Builder$AbstractBase$UsingTypeWriter.make(DynamicType.java:4085)
-	at net.bytebuddy.dynamic.DynamicType$Builder$AbstractBase.make(DynamicType.java:3769)
-	at org.mockito.internal.creation.bytebuddy.InlineBytecodeGenerator.transform(InlineBytecodeGenerator.java:402)
-	at java.instrument/java.lang.instrument.ClassFileTransformer.transform(ClassFileTransformer.java:257)
-	at java.instrument/sun.instrument.TransformerManager.transform(TransformerManager.java:188)
-	at java.instrument/sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java:594)
-	at java.instrument/sun.instrument.InstrumentationImpl.retransformClasses0(Native Method)
-	at java.instrument/sun.instrument.InstrumentationImpl.retransformClasses(InstrumentationImpl.java:221)
-	at org.mockito.internal.creation.bytebuddy.InlineBytecodeGenerator.triggerRetransformation(InlineBytecodeGenerator.java:281)
-	... 26 more
-
-[INFO] 
-[INFO] Results:
-[INFO] 
-[ERROR] Errors: 
-[ERROR]   WeatherServiceTest.setUp:30 Mockito 
-Mockito cannot mock this class: class okhttp3.OkHttpClient.
-
-If you're not sure why you're getting this error, please open an issue on GitHub.
-
-
-Java               : 25
-JVM vendor name    : Oracle Corporation
-JVM vendor version : 25.0.1+8-LTS-27
-JVM name           : Java HotSpot(TM) 64-Bit Server VM
-JVM version        : 25.0.1+8-LTS-27
-JVM info           : mixed mode, sharing
-OS name            : Windows 11
-OS version         : 10.0
-
-
-You are seeing this disclaimer because Mockito is configured to create inlined mocks.
-You can learn about inline mocks and their limitations under item #39 of the Mockito class javadoc.
-
-Underlying exception : org.mockito.exceptions.base.MockitoException: Could not modify all classes [interface okhttp3.WebSocket$Factory, interface java.lang.Cloneable, class java.lang.Object, interface okhttp3.Call$Factory, class okhttp3.OkHttpClient]
-[ERROR]   WeatherServiceTest.setUp:30 Mockito 
-Mockito cannot mock this class: class okhttp3.OkHttpClient.
-
-If you're not sure why you're getting this error, please open an issue on GitHub.
-
-
-Java               : 25
-JVM vendor name    : Oracle Corporation
-JVM vendor version : 25.0.1+8-LTS-27
-JVM name           : Java HotSpot(TM) 64-Bit Server VM
-JVM version        : 25.0.1+8-LTS-27
-JVM info           : mixed mode, sharing
-OS name            : Windows 11
-OS version         : 10.0
-
-
-You are seeing this disclaimer because Mockito is configured to create inlined mocks.
-You can learn about inline mocks and their limitations under item #39 of the Mockito class javadoc.
-
-Underlying exception : org.mockito.exceptions.base.MockitoException: Could not modify all classes [interface okhttp3.WebSocket$Factory, interface java.lang.Cloneable, class java.lang.Object, interface okhttp3.Call$Factory, class okhttp3.OkHttpClient]
-[INFO] 
-[ERROR] Tests run: 2, Failures: 0, Errors: 2, Skipped: 0
-[INFO] 
-[INFO] ------------------------------------------------------------------------
-[INFO] BUILD FAILURE
-[INFO] ------------------------------------------------------------------------
-[INFO] Total time:  13.782 s
-[INFO] Finished at: 2025-12-24T13:33:38+05:30
-[INFO] ------------------------------------------------------------------------
-[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:3.5.2:test (default-test) on project weather-web: 
-[ERROR] 
-[ERROR] See D:\5THSEMISTER\INT331\weather-web\target\surefire-reports for the individual test results.
-[ERROR] See dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
-[ERROR] -> [Help 1]
-[ERROR] 
-[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
-[ERROR] Re-run Maven using the -X switch to enable full debug logging.
-[ERROR] 
-[ERROR] For more information about the errors and possible solutions, please read the following articles:
-[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
