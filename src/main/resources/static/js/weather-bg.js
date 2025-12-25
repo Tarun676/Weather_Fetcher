@@ -27,37 +27,37 @@
         const nearShare = 0.6;
         const nearCount = Math.round(amount * nearShare);
         const farCount = amount - nearCount;
-    
+
         function spawnCloud(layerClass) {
             const c = document.createElement('div');
             c.className = 'cloud ' + layerClass;
-    
+
             // Always spawn BEFORE the left edge so formation is never visible
             const top = Math.random() * (70 - 6) + 6;           // 6vh .. 70vh
             const left = Math.random() * (-10 - (-40)) + (-40); // -40vw .. -10vw (off-screen left)
-    
+
             // Simple pill sizes: near = bigger, far = smaller
             const baseWidth = layerClass === 'cloud--near'
                 ? Math.random() * (360 - 240) + 240             // 240px .. 360px
                 : Math.random() * (240 - 160) + 160;            // 160px .. 240px
             const baseHeight = Math.max(58, baseWidth * 0.30);
-    
+
             c.style.top = top + 'vh';
             c.style.left = left + 'vw';
             c.style.width = baseWidth + 'px';
             c.style.height = baseHeight + 'px';
-    
+
             // Natural, slower drift; NO negative delay (prevents mid-path spawning around center)
-            const dur  = layerClass === 'cloud--near' ? Math.random() * (34 - 24) + 24  // 24s .. 34s
-                                                       : Math.random() * (46 - 32) + 32; // 32s .. 46s
+            const dur = layerClass === 'cloud--near' ? Math.random() * (34 - 24) + 24  // 24s .. 34s
+                : Math.random() * (46 - 32) + 32; // 32s .. 46s
             const delay = '0s';
-    
+
             c.style.setProperty('--dur', dur + 's');
             c.style.setProperty('--delay', delay);
-    
+
             container.appendChild(c);
         }
-    
+
         for (let i = 0; i < nearCount; i++) spawnCloud('cloud--near');
         for (let i = 0; i < farCount; i++)  spawnCloud('cloud--far');
     }
@@ -111,14 +111,15 @@
     window.setWeatherBackground = function (rawCondition) {
         const cls = mapCondition(rawCondition);
         const body = document.body;
-        ['Clear','Rain','Snow','Clouds','Thunder'].forEach(c => body.classList.remove(c));
+        ['Clear', 'Rain', 'Snow', 'Clouds', 'Thunder'].forEach(c => body.classList.remove(c));
         body.classList.add(cls);
 
         let container = document.getElementById('weather-effects');
         if (!container) {
             container = document.createElement('div');
             container.id = 'weather-effects';
-            document.body.appendChild(container);
+            // Prepend to ensure it is the first element, sitting behind everything else in DOM order
+            document.body.prepend(container);
         }
         clearEffects(container);
 
@@ -135,53 +136,61 @@
         }
     };
 
-    document.addEventListener('DOMContentLoaded', function () {
+    function init() {
         if (window.weatherCondition) {
             setWeatherBackground(window.weatherCondition);
         }
-    });
+    }
 
-    // Spawn one cloud; seed=true scatters it across width/height initially (already mid-drift)
+    // Run immediately if DOM is ready (e.g. HTMX swap re-executing script), otherwise wait
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+    } else {
+        init();
+    }
+
+
+    // Spawn one cloud; seed=true. scatters it across width/height initially (already mid-drift)
     function spawnCloud(container, layerClass, seed = false) {
         const c = document.createElement('div');
         c.className = 'cloud ' + layerClass;
-    
+
         // Full vertical coverage
         const top = Math.random() * (99 - 1) + 1; // 1vh .. 99vh
-    
+
         // Horizontal placement:
         // - seed: anywhere from off-screen left to far right (already mid-path)
         // - subsequent: off-screen left only for natural entry
         const left = seed
             ? Math.random() * (120 - (-60)) + (-60) // -60vw .. 120vw
             : Math.random() * (-12 - (-60)) + (-60); // -60vw .. -12vw
-    
+
         // Sizes per layer
         const baseWidth = layerClass === 'cloud--near'
             ? Math.random() * (360 - 240) + 240
             : Math.random() * (240 - 160) + 160;
         const baseHeight = Math.max(56, baseWidth * 0.30);
-    
+
         c.style.top = top + 'vh';
         c.style.left = left + 'vw';
         c.style.width = baseWidth + 'px';
         c.style.height = baseHeight + 'px';
-    
+
         // Drift speed; near slightly faster
-        const dur  = layerClass === 'cloud--near'
+        const dur = layerClass === 'cloud--near'
             ? Math.random() * (36 - 24) + 24   // 24s .. 36s
             : Math.random() * (50 - 34) + 34;  // 34s .. 50s
-    
+
         // Seeded clouds start mid-animation so the screen is already filled
         const delay = seed ? -Math.random() * dur : 0;
-    
+
         c.style.setProperty('--dur', dur + 's');
         c.style.setProperty('--delay', delay + 's');
-    
+
         // Fluffy silhouette: core + two lobes (looks like clouds)
         const shape = document.createElement('div');
         shape.className = 'cloud-shape';
-        const core  = document.createElement('span');
+        const core = document.createElement('span');
         core.className = 'core';
         const lobeL = document.createElement('span');
         lobeL.className = 'lobe-left';
@@ -191,12 +200,12 @@
         shape.appendChild(lobeL);
         shape.appendChild(lobeR);
         c.appendChild(shape);
-    
+
         container.appendChild(c);
-    
+
         // Compute remaining time until drift finishes (for seeded clouds with negative delay)
         const remaining = dur - Math.min(Math.abs(delay), dur);
-    
+
         // When finished, remove and respawn off-screen left, staggered
         setTimeout(() => {
             if (c.parentNode === container) {
@@ -210,10 +219,10 @@
     function makeClouds(container, amount = 140) {
         const nearShare = 0.6;
         const targetNear = Math.round(amount * nearShare);
-        const targetFar  = amount - targetNear;
-    
+        const targetFar = amount - targetNear;
+
         // Seed: scatter across width/height with negative delays so screen starts full
         for (let i = 0; i < targetNear; i++) spawnCloud(container, 'cloud--near', true);
-        for (let i = 0; i < targetFar; i++)  spawnCloud(container, 'cloud--far',  true);
+        for (let i = 0; i < targetFar; i++)  spawnCloud(container, 'cloud--far', true);
     }
 })();
